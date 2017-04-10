@@ -77,13 +77,13 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 	fmt.Println("query did not find func: " + function)
 
 	return nil, errors.New("Received unknown function query: " + function)
-	/*	{
+	{
 		if function == "Cal_length" { //read a variable
 			return t.Cal_length(stub, args)
 		}
 		fmt.Println("query did not find func: " + function)
 
-	}*/
+	}
 }
 
 // write - invoke function to write key/value pair
